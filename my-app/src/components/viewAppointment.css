@@ -1,0 +1,64 @@
+/* viewAppointment.css */
+/* Base styling */
+.appointments-page {
+    position: relative;
+  }
+  
+  .appointments-container {
+    background: linear-gradient(to bottom, #87ceeb, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .appointment-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    transition: transform 0.2s;
+  }
+  
+  .appointment-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .go-to-home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .go-to-home-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .appointments-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .go-to-home-button {
+      position: relative; /* Change position to relative */
+      top: 0; /* Reset top positioning */
+      left: 0; /* Reset left positioning */
+      margin-top: 10px; /* Add margin to the top */
+      width: 30%;
+      align-items: center; 
+      margin-bottom: 20px;
+    }
+  }
+  
