@@ -69,4 +69,22 @@
     font-size: 1rem;
     padding: 8px 16px;
   }
+
+  .bottom-navbar {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .icon-image {
+    margin-bottom: 0;
+  }
+
+  .nav-text {
+    font-size: 0.4rem;
+    margin-top: 0.25rem;
+  }
 }

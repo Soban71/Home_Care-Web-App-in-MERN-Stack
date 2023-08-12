@@ -1,4 +1,3 @@
-// models/Appointment.js
 import mongoose from "mongoose";
 
 const appointmentSchema = new mongoose.Schema({
@@ -6,6 +5,13 @@ const appointmentSchema = new mongoose.Schema({
   date: String,
   time: String,
   treatment: String,
+  healthInsureCard: Buffer, // Store the uploaded image as Buffer
+  medicationList: String,
+  checklist: [Boolean],
+  emergencyContact: String,
+  name: String,
+  age: String,
+  gender: String,
 });
 
 const Appointment = mongoose.model("Appointment", appointmentSchema);
